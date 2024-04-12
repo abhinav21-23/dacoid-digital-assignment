@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div
+      class="w-full relative rounded-3xs bg-white overflow-hidden flex flex-col items-start justify-start pt-3 px-0 pb-0 box-border gap-[54.7px] leading-[normal] tracking-[normal]"
+    >
+      <section
+        class="self-stretch flex flex-row items-start justify-start py-0 px-3.5 box-border max-w-full text-center text-[15px] text-gray-200 font-montserrat"
+      >
+        <div
+          class="flex-1 flex flex-col items-start justify-start gap-[24.8px] max-w-full"
+        >
+          <div
+            class="self-stretch flex flex-col items-end justify-start gap-[4.1px] max-w-full"
+          >
+            <div
+              class="self-stretch flex flex-row flex-wrap items-start justify-start gap-[33px]"
+            >
+              <div
+                class="w-[54px] flex flex-col items-start justify-start gap-[40px]"
+              >
+                <div
+                  class="self-stretch relative tracking-[-0.3px] font-semibold"
+                >
+                  9:41
+                </div>
+                <div
+                  class="flex flex-row items-start justify-start py-0 px-0.5"
+                >
+                  <img
+                    class="h-5 w-5 relative rounded-[3px] overflow-hidden shrink-0"
+                    alt=""
+                    src="/public/chevronleft.svg"
+                  />
+                </div>
+              </div>
+              <div
+                class="flex-1 flex flex-col items-start justify-start pt-1 px-0 pb-0 box-border min-w-[169px] text-[20px] text-black"
+              >
+                <div
+                  class="self-stretch flex flex-row items-start justify-start gap-[4.5px]"
+                >
+                  <div
+                    class="flex-1 flex flex-col items-end justify-start gap-[40.3px]"
+                  >
+                    <div
+                      class="h-[11.7px] flex flex-row items-end justify-start py-0 pr-0 pl-5 box-border gap-[5px]"
+                    >
+                      <img
+                        class="h-[10.7px] w-[17px] relative"
+                        loading="lazy"
+                        alt=""
+                        src="/public/cellular-connection.svg"
+                      />
+
+                      <img
+                        class="h-[11px] w-[15.3px] relative"
+                        loading="lazy"
+                        alt=""
+                        src="/public/wifi.svg"
+                      />
+                    </div>
+                    <div
+                      class="self-stretch flex flex-row items-start justify-start pt-0 px-0 pb-[10.7px]"
+                    >
+                      <div
+                        class="w-48 relative font-semibold inline-block box-border pr-5"
+                      >
+                        Workout Tracker
+                      </div>
+                    </div>
+                    <div
+                      class="w-[214.7px] flex flex-col items-start justify-start py-0 pr-0 pl-5 box-border gap-[1.2px] text-left text-xs-2"
+                    >
+                      <div
+                        class="self-stretch flex flex-row items-start justify-between gap-[20px]"
+                      >
+                        <div class="w-[61px] relative inline-block">
+                          Good job
+                        </div>
+                        <div class="w-[99px] relative inline-block">
+                          less then 320cal
+                        </div>
+                      </div>
+                      <div
+                        class="w-[180.2px] flex flex-row items-start justify-start py-0 pr-[33px] pl-[32.6px] box-border"
+                      >
+                        <div
+                          class="flex-1 flex flex-row items-start justify-between gap-[20px]"
+                        >
+                          <img
+                            class="self-stretch w-0.5 relative max-h-full min-h-[10px]"
+                            loading="lazy"
+                            alt=""
+                            src="/public/union.svg"
+                          />
+
+                          <img
+                            class="self-stretch w-0.5 relative max-h-full min-h-[10px]"
+                            loading="lazy"
+                            alt=""
+                            src="/public/union-1.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="h-[11.3px] w-[24.3px] relative">
+                    <div
+                      class="absolute top-[0px] right-[2.3px] rounded-[2.67px] box-border w-[22px] h-[11.3px] opacity-[0.35] mix-blend-normal border-[1px] border-solid border-gray-200"
+                    ></div>
+                    <img
+                      class="absolute top-[3.7px] right-[0px] w-[1.3px] h-1 mix-blend-normal"
+                      loading="lazy"
+                      alt=""
+                      src="/public/cap.svg"
+                    />
+
+                    <div
+                      class="absolute top-[2px] right-[4.3px] rounded-[1.33px] bg-gray-200 w-[18px] h-[7.3px] z-[1]"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="self-stretch flex flex-row items-start justify-end py-0 pr-[1.6px] pl-0.5 box-border max-w-full text-left text-sm-2 text-black"
+            >
+              <div
+                class="h-[90px] flex-1 flex flex-col items-start justify-start pt-0 px-0 pb-[18.7px] box-border gap-[4px] max-w-full cursor-pointer"
+                id="chartFullContainer"
+              >
+                <div
+                  class="w-[316.2px] flex flex-row items-start justify-between py-0 pr-10 pl-0 box-border relative shrink-0 [debug_commit:f6aba90]"
+                >
+                  <div
+                    class="flex flex-col items-start justify-start pt-[3px] px-0 pb-0"
+                  >
+                    <div
+                      class="flex flex-row items-start justify-start relative"
+                    >
+                      <div
+                        class="h-[70.2px] w-[327.8px] absolute !m-[0] right-[-275.7px] bottom-[-51.7px] flex items-center justify-center z-[0]"
+                      >
+                        <img
+                          class="h-full w-full object-contain absolute left-[7px] top-[0px] [transform:scale(1.044)]"
+                          loading="lazy"
+                          alt=""
+                          src="/public/back-lines.svg"
+                        />
+                      </div>
+                      <div class="relative inline-block min-w-[53px] z-[1]">
+                        900CAL
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-row items-end justify-start gap-[14px]">
+                    <div
+                      class="w-[24.2px] flex flex-row items-end justify-start py-0 pr-[7.4px] pl-0 box-border gap-[0.7px]"
+                    >
+                      <div
+                        class="h-[70.3px] w-[3.1px] relative rounded-t-[1.53px] rounded-b-none bg-limegreen-200 box-border z-[1] border-[0.4px] border-solid border-limegreen-100"
+                      >
+                        <div
+                          class="absolute top-[0px] left-[0px] rounded-t-[1.53px] rounded-b-none bg-limegreen-200 box-border w-[2.8px] h-[70.2px] hidden z-[1] border-[0.4px] border-solid border-limegreen-100"
+                        ></div>
+                        <div
+                          class="absolute top-[10.2px] left-[0px] rounded-t-[1.53px] rounded-b-none bg-cornflowerblue-100 w-[3.1px] h-[60.1px] z-[2]"
+                        ></div>
+                      </div>
+                      <div class="h-[30.6px] w-[13px] relative">
+                        <div
+                          class="absolute top-[0px] left-[0px] rounded-t-[1.53px] rounded-b-none bg-cornflowerblue-100 w-[2.8px] h-[30.5px] z-[1]"
+                        ></div>
+                        <div
+                          class="absolute top-[21.4px] left-[10.2px] rounded-t-[1.53px] rounded-b-none bg-cornflowerblue-100 w-[2.8px] h-[9.2px] z-[1]"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="h-[34.7px] w-[29.8px] relative">
+                      <div
+                        class="absolute top-[17.3px] left-[0px] rounded-t-[1.53px] rounded-b-none bg-cornflowerblue-100 w-[2.8px] h-[17.3px] z-[1]"
+                      ></div>
+                      <div
+                        class="absolute top-[0px] left-[3.7px] rounded-t-[1.53px] rounded-b-none bg-cornflowerblue-100 w-[2.8px] h-[34.6px] z-[1]"
+                      ></div>
+                      <div
+                        class="absolute top-[24.4px] left-[7.5px] rounded-t-[1.53px] rounded-b-none bg-cornflowerblue-100 w-[2.8px] h-[10.2px] z-[1]"
+                      ></div>
+                      <div
+                        class="absolute top-[27.5px] left-[11.2px] rounded-t-[1.53px] rounded-b-none bg-cornflowerblue-100 w-[2.8px] h-[7.1px] z-[1]"
+                      ></div>
+                      <div
+                        class="absolute top-[25.5px] left-[27px] rounded-t-[1.53px] rounded-b-none bg-cornflowerblue-100 w-[2.8px] h-[9.2px] z-[1]"
+                      ></div>
+                    </div>
+                    <div
+                      class="flex flex-col items-start justify-start py-0 pr-1 pl-0"
+                    >
+                      <div
+                        class="w-[2.8px] h-[9.2px] relative rounded-t-[1.53px] rounded-b-none bg-cornflowerblue-100 z-[1]"
+                      ></div>
+                    </div>
+                    <div
+                      class="flex flex-row items-end justify-start gap-[0.8px]"
+                    >
+                      <div
+                        class="h-[25.4px] w-[2.8px] relative rounded-t-[1.53px] rounded-b-none bg-cornflowerblue-100 z-[1]"
+                      ></div>
+                      <div
+                        class="h-[8.1px] w-[2.8px] relative rounded-t-[1.53px] rounded-b-none bg-cornflowerblue-100 z-[1]"
+                      ></div>
+                      <div
+                        class="h-[33.6px] w-[3.1px] relative rounded-t-[1.53px] rounded-b-none bg-red z-[1]"
+                      >
+                        <div
+                          class="absolute top-[0px] left-[0px] rounded-t-[1.53px] rounded-b-none bg-red w-[2.8px] h-[33.6px] hidden z-[1]"
+                        ></div>
+                        <div
+                          class="absolute top-[10.2px] left-[0px] rounded-t-[1.53px] rounded-b-none bg-cornflowerblue-100 w-[3.1px] h-[23.4px] z-[2]"
+                        ></div>
+                      </div>
+                      <div
+                        class="h-[71.3px] w-[2.8px] relative rounded-t-[1.53px] rounded-b-none bg-red z-[1]"
+                      >
+                        <div
+                          class="absolute top-[0px] left-[0px] rounded-t-[1.53px] rounded-b-none bg-red w-full h-full hidden z-[1]"
+                        ></div>
+                        <div
+                          class="absolute top-[22.4px] left-[0.3px] rounded-t-[1.53px] rounded-b-none bg-cornflowerblue-100 w-0.5 h-[48.9px] z-[2]"
+                        ></div>
+                      </div>
+                      <div
+                        class="h-[41.7px] w-[3.2px] relative rounded-t-[1.53px] rounded-b-none bg-red z-[1]"
+                      >
+                        <div
+                          class="absolute top-[0px] left-[0.4px] rounded-t-[1.53px] rounded-b-none bg-red w-[2.8px] h-[41.7px] hidden z-[1]"
+                        ></div>
+                        <div
+                          class="absolute top-[13.2px] left-[0px] rounded-t-[1.53px] rounded-b-none bg-cornflowerblue-100 w-[3.1px] h-[28.5px] z-[2]"
+                        ></div>
+                      </div>
+                      <div
+                        class="h-[29.6px] w-[3.1px] relative rounded-t-[1.53px] rounded-b-none bg-red z-[1]"
+                      >
+                        <div
+                          class="absolute top-[0px] left-[0px] rounded-t-[1.53px] rounded-b-none bg-red w-[2.8px] h-[29.5px] hidden z-[1]"
+                        ></div>
+                        <div
+                          class="absolute top-[9.2px] left-[0px] rounded-t-[1.53px] rounded-b-none bg-cornflowerblue-100 w-[3.1px] h-[20.4px] z-[2]"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="h-[10.2px] w-[2.8px] absolute !m-[0] right-[20px] bottom-[0.1px] rounded-t-[1.53px] rounded-b-none bg-cornflowerblue-100 z-[1]"
+                  ></div>
+                </div>
+                <div
+                  class="w-[286.8px] flex flex-row items-start justify-start py-0 px-0.5 box-border text-smi-2"
+                >
+                  <div
+                    class="flex-1 flex flex-row items-start justify-between shrink-0 [debug_commit:f6aba90]"
+                  >
+                    <div
+                      class="w-10 relative inline-block shrink-0 whitespace-nowrap"
+                    >
+                      12:00
+                    </div>
+                    <div class="w-[41px] relative inline-block shrink-0">
+                      6:00
+                    </div>
+                    <div
+                      class="w-[41px] flex flex-col items-start justify-start py-0 pr-[3px] pl-0 box-border"
+                    >
+                      <div class="self-stretch relative whitespace-nowrap">
+                        12:00
+                      </div>
+                    </div>
+                    <div class="w-[35.1px] relative inline-block shrink-0">
+                      6:00
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[332.8px] h-[50px] flex flex-row items-start justify-start py-0 px-0.5 box-border max-w-full text-left text-[12.6px] text-black"
+          >
+            <div
+              class="self-stretch flex-1 rounded-3xs [background:linear-gradient(90.07deg,_rgba(129,_157,_255,_0.28),_rgba(16,_16,_16,_0))] [backdrop-filter:blur(40.71px)] box-border flex flex-row items-end justify-start pt-[9.7px] px-[9px] pb-[10.3px] gap-[8px] max-w-full border-[1px] border-solid border-darkslategray"
+            >
+              <div class="flex flex-col items-start justify-end pt-0 px-0 pb-1">
+                <img
+                  class="w-5 h-5 relative overflow-hidden shrink-0"
+                  loading="lazy"
+                  alt=""
+                  src="/public/alerttriangle.svg"
+                />
+              </div>
+              <div
+                class="self-stretch flex-1 flex flex-col items-start justify-start"
+              >
+                <div class="self-stretch relative font-medium">
+                  You've burned fewer calories than yesterday. Time to get
+                  moving!
+                </div>
+                <div
+                  class="self-stretch h-4 flex flex-row items-start justify-end mt-[-26.5px] text-right text-sm-2"
+                >
+                  <div
+                    class="self-stretch w-[17px] relative inline-block shrink-0 z-[1]"
+                  >
+                    <b></b>
+                    <span> </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="self-stretch h-11 relative bg-white hidden"></div>
+      <section
+        class="self-stretch flex flex-col items-start justify-start gap-[16.3px] max-w-full text-left text-xs text-black font-montserrat"
+      >
+        <div
+          class="self-stretch flex flex-row items-start justify-start py-0 pr-[17px] pl-4 box-border max-w-full text-base"
+        >
+          <div
+            class="flex-1 flex flex-row items-start justify-between max-w-full gap-[20px]"
+          >
+            <div class="relative font-semibold">Upcoming Workout</div>
+            <div
+              class="flex flex-col items-start justify-start pt-0.5 px-0 pb-0 text-xs text-gray-100"
+            >
+              <div class="relative font-medium inline-block min-w-[58px]">
+                See more
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="self-stretch flex flex-row items-start justify-start py-0 px-4 box-border max-w-full"
+        >
+          <div
+            class="flex-1 rounded-xl bg-white shadow-[-4px_8px_25px_-8px_rgba(0,_0,_0,_0.15)] flex flex-row items-start justify-between pt-[13px] px-4 pb-3 box-border max-w-full gap-[20px]"
+          >
+            <div
+              class="h-[75px] w-[343px] relative rounded-xl bg-white shadow-[-4px_8px_25px_-8px_rgba(0,_0,_0,_0.15)] hidden max-w-full"
+            ></div>
+            <div class="flex flex-row items-start justify-start gap-[9px]">
+              <img
+                class="h-[50px] w-[50px] relative rounded-[50%] object-cover z-[1]"
+                loading="lazy"
+                alt=""
+                src="/public/ellipse-53@2x.png"
+              />
+
+              <div
+                class="flex flex-col items-start justify-start pt-[3px] px-0 pb-0"
+              >
+                <div class="flex flex-col items-start justify-start gap-[8px]">
+                  <div
+                    class="relative font-medium inline-block min-w-[114px] z-[1]"
+                  >
+                    Full Body Workout
+                  </div>
+                  <div
+                    class="relative text-3xs font-medium text-gray-100 inline-block min-w-[56px] z-[1]"
+                  >
+                    Today 3pm
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col items-start justify-start pt-[15px] px-0 pb-0"
+            >
+              <div class="w-10 h-5 relative z-[1]">
+                <div
+                  class="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-[14.29px] bg-cornflowerblue-100 box-border border-[0.7px] border-solid border-darkslateblue"
+                ></div>
+                <div
+                  class="absolute h-[78.5%] w-[39.25%] top-[10.5%] right-[53.5%] bottom-[11%] left-[7.25%] rounded-[50%] bg-white z-[1]"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="self-stretch flex flex-row items-start justify-start py-0 px-4 box-border max-w-full"
+        >
+          <div
+            class="flex-1 rounded-xl bg-white shadow-[-4px_8px_25px_-8px_rgba(0,_0,_0,_0.15)] flex flex-row items-start justify-start pt-[13px] px-4 pb-3 box-border relative gap-[9px] max-w-full"
+          >
+            <div
+              class="h-[75px] w-[343px] relative rounded-xl bg-white shadow-[-4px_8px_25px_-8px_rgba(0,_0,_0,_0.15)] hidden max-w-full z-[0]"
+            ></div>
+            <img
+              class="h-[50px] w-[50px] relative rounded-[50%] object-cover z-[1]"
+              loading="lazy"
+              alt=""
+              src="/public/ellipse-54@2x.png"
+            />
+
+            <div
+              class="h-5 w-10 absolute !m-[0] right-[16px] bottom-[27px] z-[1]"
+            >
+              <div
+                class="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-[14.29px] bg-cornflowerblue-100 box-border border-[0.7px] border-solid border-darkslateblue"
+              ></div>
+              <div
+                class="absolute h-[78.5%] w-[39.25%] top-[10.5%] right-[53.5%] bottom-[11%] left-[7.25%] rounded-[50%] bg-white z-[1]"
+              ></div>
+            </div>
+            <div
+              class="flex flex-col items-start justify-start pt-[7px] px-0 pb-0"
+            >
+              <div class="flex flex-col items-start justify-start gap-[8px]">
+                <div class="relative font-medium z-[1]">Upper Body Workout</div>
+                <div
+                  class="relative text-3xs font-medium text-gray-100 inline-block min-w-[74px] whitespace-nowrap z-[1]"
+                >
+                  4 Feb, 3:30 pm
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-row items-start justify-start py-0 px-[17px] text-base"
+        >
+          <div class="relative font-semibold">What Do You Want to Train</div>
+        </div>
+        <div
+          class="self-stretch flex flex-col items-start justify-start max-w-full"
+        >
+          <div
+            class="self-stretch flex flex-row items-start justify-start py-0 px-4 box-border max-w-full"
+          >
+            <div
+              class="flex-1 rounded-xl bg-cornflowerblue-200 shadow-[-4px_8px_25px_-8px_rgba(0,_0,_0,_0.15)] flex flex-row items-start justify-start pt-4 pb-2 pr-3 pl-4 box-border gap-[28px] max-w-full"
+            >
+              <div
+                class="h-[124px] w-[343px] relative rounded-xl bg-cornflowerblue-200 shadow-[-4px_8px_25px_-8px_rgba(0,_0,_0,_0.15)] hidden max-w-full"
+              ></div>
+              <div
+                class="flex-1 flex flex-col items-start justify-start gap-[9px] min-w-[122px]"
+              >
+                <div
+                  class="relative font-medium inline-block min-w-[114px] z-[1]"
+                >
+                  Full Body Workout
+                </div>
+                <div
+                  class="self-stretch h-[75px] flex flex-col items-start justify-start text-3xs"
+                >
+                  <div
+                    class="relative font-medium inline-block min-w-[27px] z-[1]"
+                  >
+                    Arms
+                  </div>
+                  <div
+                    class="self-stretch flex-1 flex flex-row items-start justify-between gap-[20px]"
+                  >
+                    <div
+                      class="flex flex-col items-start justify-start pt-2 px-0 pb-0"
+                    >
+                      <div
+                        class="relative font-medium inline-block min-w-[30px] z-[1]"
+                      >
+                        Chest
+                      </div>
+                    </div>
+                    <div
+                      class="h-[63px] w-[63px] relative z-[4] flex items-center justify-center"
+                    >
+                      <img
+                        class="h-full w-full z-[4] object-contain absolute left-[0px] top-[4px] [transform:scale(1.206)]"
+                        loading="lazy"
+                        alt=""
+                        src="/public/group-1.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="h-[100px] w-[100px] relative rounded-[50%] object-cover min-h-[100px] z-[1]"
+                loading="lazy"
+                alt=""
+                src="/public/ellipse-55@2x.png"
+              />
+            </div>
+          </div>
+          <footer
+            class="self-stretch bg-white flex flex-row items-start justify-start pt-[22.1px] px-[29px] pb-[26.7px] box-border max-w-full z-[2] mt-[-47px]"
+          >
+            <div
+              class="h-[76px] w-[375px] relative bg-white hidden max-w-full"
+            ></div>
+            <img
+              class="h-[27.2px] flex-1 relative max-w-full overflow-hidden z-[3]"
+              alt=""
+              src="/public/group-5.svg"
+            />
+          </footer>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var chartFullContainer = document.getElementById("chartFullContainer");
+      if (chartFullContainer) {
+        chartFullContainer.addEventListener("click", function (e) {
+          // Please sync "Android Large - 9" to the project
+        });
+      }
+      </script>
+  </body>
+</html>
